@@ -1,12 +1,12 @@
 # IPTV Player for M3U Playlists
 
-This is a simple Python GUI application for macOS (including Apple Silicon) that loads an M3U playlist, lists available bouquets (groups), allows searching channels and opens streams with the default video player.
+This is a simple Python GUI application for macOS (including Apple Silicon) that loads an M3U playlist, lists available bouquets (groups), allows searching channels and opens streams with VLC by default on macOS.
 
 ## Requirements
 
 - Python 3 with Tkinter (included with standard Python on macOS)
 - `requests` library (`pip install requests`)
-- A video player installed (e.g., VLC). Streams are opened using the default handler via the `open` command.
+- A video player installed (e.g., VLC). On macOS the streams are opened in VLC using `open -a VLC`; other platforms use the system default handler.
 
 ## Usage
 

@@ -133,7 +133,7 @@ class PlayerApp(tk.Tk):
     def _open_stream(self, url):
         try:
             if sys.platform == "darwin":
-                subprocess.Popen(['open', url])
+                subprocess.Popen(['open', '-a', 'VLC', url])
             elif sys.platform.startswith('win'):
                 os.startfile(url)
             else:
