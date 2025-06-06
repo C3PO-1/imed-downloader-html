@@ -4,6 +4,7 @@ import requests
 import re
 import subprocess
 import sys
+import os
 
 class LoginFrame(ttk.Frame):
     """Frame asking for an M3U playlist."""
